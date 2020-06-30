@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}/*Inizio aside*/
+
+aside {
+    position: fixed;
+    top:0 ;
+    left: 0;
+    width: 200px;
+    height: calc(100% - 80px);
+    display: flex;
+    flex-direction: column;
+    background: black;
+}
+
+.nav-bar img {
+    width:100%;
+    display: block;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: grey;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 20px;
+
+}
+
+.nav-bar a i {
+    padding-right:10px;
+}
+
+.playlist {
+    color: white;
+    margin-top: 20px;
+    font-size: 23px;
+    font-weight: bold;
+}
+
+.playlist h5{
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+
+.playlist a i {
+    font-size: 35px;
+}
+
+.playlist ul li {
+    padding-top:15px;
+    list-style: none;
+    color: grey;
+    font-size: 10px;
+}
+
+/*!! Stile Profilo in basso*/
+.bottom-profile {
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.profile {
+    border-top: 1px solid white;
+}
+#profile {
+    color: white;
+}
+
+
+/*!! Fine profilo in basso */
+/*Fine Aside*/
+
+main {
+    margin-left: 200px;
+}
+
+footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+   height: 80px;
+   z-index: 2;
+}
