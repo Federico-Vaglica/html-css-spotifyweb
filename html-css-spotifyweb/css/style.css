@@ -25,7 +25,7 @@ aside {
     position: fixed;
     top:0 ;
     left: 0;
-    z-index: 999;
+    z-index: 998;
 }
 /*Style logo*/
 
@@ -95,7 +95,7 @@ aside {
 /*Main style*/
 
 main {
-    width: 100%;
+    width: calc(100% - 200px);
     margin-left: 200px;
     margin-top:50px;
     background-color: olive;
@@ -141,12 +141,13 @@ footer {
     bottom: 0;
     left: 0;
     background-color: black;
+    z-index: 999;
 }
 
 .section-side {
     width: 15%;
     height: 90px;
-    background-color: blue;
+    background-color: #282828;
     float: left;
 }
 
@@ -157,14 +158,56 @@ footer {
     float: left;
 }
 
+/*First section Player*/
+
 .album {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
 }
 
 .album img{
     height: 100%;
     width:20%;
     float: left;
+}
 
+.icon-album {
+    float:right;
+}
+
+/*Player*/
+
+.player {
+    width:100%;
+    height: 50%;
+    background-color: #282828;
+}
+
+.player-icons  {
+    height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.player-icon  {
+    padding: 5px 40px;
+}
+
+.player-icon i {
+    color:white;
+}
+
+.play-button {
+    font-size: 35px;
+}
+
+/*Time Bar Player*/
+
+.time-bar-player {
+    width:100%;
+    height: 100%;
+    background-color: #282828;
 }
