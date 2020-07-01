@@ -72,6 +72,10 @@ aside {
     padding: 14px 0;
 }
 
+.playlist-container {
+    flex-grow: 2;
+}
+
 .playlist a {
     text-decoration:none;
     color: #a3a3a3;
@@ -85,7 +89,6 @@ aside {
 .target  {
     color: #a3a3a3;
     text-decoration: none;
-    padding-left: 4px;
 }
 
 .playlist li {
@@ -98,9 +101,6 @@ aside {
 
 .element-download  {
     width: 100%;
-    position: absolute;
-    bottom:0;
-    display: block;
 }
 
 .element1 {
@@ -142,6 +142,19 @@ main {
 .category a {
     text-decoration: none;
     color: white;
+}
+
+.music-cards {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width:20%;
+}
+
+.card img {
+    width: 100%;
 }
 
 /*Stile Upgrade bar*/
