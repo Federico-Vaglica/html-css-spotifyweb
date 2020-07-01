@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-weight: bolder;
 }
 
 /* clearfix */
@@ -43,24 +44,37 @@ aside {
 
 
 .nav-element {
-    color: white;
+    color: #a3a3a3;
     padding: 3px 10px;
     flex-shrink: 0;
+}
+
+.aside-icon {
+    font-size: 23px;
 }
 
 .nav-element ul {
     list-style: none;
 }
 
+.nav-element ul li {
+    padding : 10px 0 ;
+}
+
 .nav-element a {
     text-decoration: none;
-    color: white;
+    color: #a3a3a3;
 }
 /*Inizio Style playlist element*/
 
+#playlist-head {
+    color:white;
+    padding: 14px 0;
+}
+
 .playlist a {
     text-decoration:none;
-    color: white;
+    color: #a3a3a3;
 }
 
 .target i {
@@ -69,8 +83,9 @@ aside {
 }
 
 .target  {
-    color: white;
+    color: #a3a3a3;
     text-decoration: none;
+    padding-left: 4px;
 }
 
 .playlist li {
@@ -98,9 +113,35 @@ main {
     width: calc(100% - 200px);
     margin-left: 200px;
     margin-top:50px;
-    background-color: olive;
+    background-color: #141922;
     overflow-y: auto;
+
+
+    /*Da cancellare */
+    height: 100vh;
+}
+
+.container-main{
+    width:95%;
+    margin: 0 auto;
+}
+
+.categories {
     height: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    flex-wrap: wrap;
+}
+
+.category {
+    padding: 10px 30px;
+}
+
+.category a {
+    text-decoration: none;
+    color: white;
 }
 
 /*Stile Upgrade bar*/
@@ -173,8 +214,21 @@ footer {
     float: left;
 }
 
+
+.album-title h5 {
+    color:#f7f7f7;
+}
+
+.album-title p {
+    color: #787878;
+}
+
 .icon-album {
     float:right;
+}
+
+.icon-album i {
+    color: #787878;
 }
 
 /*Player*/
@@ -210,4 +264,36 @@ footer {
     width:100%;
     height: 100%;
     background-color: #282828;
+}
+
+.progress-bar {
+    height: 4px;
+    width: 20%;
+    background-color: #c1c1c1;
+    border-radius: 40px;
+}
+
+.end {
+    width:50%;
+    background-color: #5a5a5a;
+}
+
+
+
+.player-icons p {
+    color: white;
+    padding: 0px 5px;
+}
+
+
+/*Right player part */
+
+.end2{
+    width:20%;
+    background-color: #5a5a5a;
+}
+
+.icon-right {
+    padding-right: 15px;
+    color: white;
 }
