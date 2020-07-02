@@ -126,6 +126,13 @@ main {
     margin: 0 auto;
 }
 
+.title {
+    font-size: 25px;
+    color: white;
+    font-weight: bolder;
+    padding: 25px 0;
+}
+
 .categories {
     height: 100%;
     display:flex;
@@ -139,6 +146,16 @@ main {
     padding: 10px 30px;
 }
 
+.category:hover::after {
+    /*border-bottom: 0.5px solid green;*/
+    content: "";
+    /*color:#212121;*/
+    display:block;
+    width:30px;
+    margin:0 auto;
+    border-bottom:2px solid green;
+}
+
 .category a {
     text-decoration: none;
     color: white;
@@ -146,11 +163,12 @@ main {
 
 .music-cards {
     display: flex;
-    flex-wrap: wrap;
+
 }
 
 .card {
     width:20%;
+    height: 250px;
 }
 
 .card img {
