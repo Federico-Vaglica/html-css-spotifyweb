@@ -33,11 +33,12 @@ aside {
 .logo img {
     width: 100%;
     height: 80px;
+
 }
 
 .logo-small {
     display: none;
-    width: 25px;
+    width: 100%;
 }
 
 /*Fine style logo*/
@@ -47,6 +48,11 @@ aside {
     color: #a3a3a3;
     padding: 3px 10px;
     flex-shrink: 0;
+}
+
+.nav-element-small
+{
+    display: none;
 }
 
 .aside-icon {
@@ -105,6 +111,10 @@ aside {
 
 .element-download  {
     width: 100%;
+}
+
+.element-download-small {
+    display: none;
 }
 
 .element1 {
@@ -419,6 +429,58 @@ footer {
 @media all and (max-width:600px) {
 
 
+    aside {
+        width:60px;
+    }
+
+    main {
+        width: calc(100% - 60px);
+        margin-left: 60px;
+    }
+
+    .logo {
+        display: none;
+    }
+    .logo-small {
+        display: block;
+    }
+
+    .logo-small img {
+        width: 100%;
+        height: 80px;
+        object-fit: contain;
+    }
+
+    .nav-element-small {
+        display: block;
+        flex-grow: 3;
+    }
+
+    .nav-element {
+        display: none;
+    }
+
+    .nav-element-small ul li {
+        text-align: center;
+    }
+
+    .element-download-small {
+        display: block;
+    }
+
+    .element-download-small ul li {
+        text-align: center;
+    }
+
+    .aside-icon {
+        font-size: 30px;
+        padding-bottom: 10px;
+        color: #a3a3a3;
+    }
+
+    .aside-icon:hover{
+        color:white;
+    }
 
     .card {
         width: 50%;
