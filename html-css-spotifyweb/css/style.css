@@ -65,6 +65,10 @@ aside {
     text-decoration: none;
     color: #a3a3a3;
 }
+
+.nav-element a:hover {
+    color: white;
+}
 /*Inizio Style playlist element*/
 
 #playlist-head {
@@ -104,9 +108,16 @@ aside {
 }
 
 .element1 {
-    border-bottom: 1px solid white;
+    margin-bottom: 5px;
 }
 
+.profileX {
+    margin-top: 5px;
+}
+
+.fa-user-circle {
+    font-size: 24px;
+}
 /*Main style*/
 
 main {
@@ -163,16 +174,33 @@ main {
 
 .music-cards {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow:wrap;
 
 }
 
 .card {
-    width:20%;
-    height: 250px;
+    width:15%;
+    color: white;
+    text-align: center;
+    padding-bottom:10px;
+
 }
 
 .card img {
     width: 100%;
+    /*height:250px;*/
+    object-fit: contain;
+}
+
+.card > p {
+    color:#a3a3a3 ;
+    font-size: 12px;
+}
+
+.artist{
+    border-radius: 200px;
 }
 
 /*Stile Upgrade bar*/
@@ -204,6 +232,9 @@ main {
       margin: 5px 0;
 }
 
+.button-upgrade:hover {
+    padding:12px 42px;
+}
 /*Footer Play-bar*/
 
 footer {
@@ -262,6 +293,14 @@ footer {
     color: #787878;
 }
 
+.album-title *:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.icon-album *:hover {
+    color:white;
+}
 /*Player*/
 
 .player {
@@ -287,7 +326,20 @@ footer {
 
 .play-button {
     font-size: 35px;
+    padding: 5px 40px;
+    color: white;
 }
+
+.play-button:hover {
+    font-size: 39px;
+}
+
+.player-icon:hover{
+    font-size: 20px;
+}
+
+
+
 
 /*Time Bar Player*/
 
@@ -304,6 +356,10 @@ footer {
     border-radius: 40px;
 }
 
+.progress-bar:hover {
+    color:green;
+}
+
 .end {
     width:50%;
     background-color: #5a5a5a;
@@ -316,6 +372,9 @@ footer {
     padding: 0px 5px;
 }
 
+.player-icons i:hover{
+    font-size: 18px;
+}
 
 /*Right player part */
 
@@ -327,4 +386,58 @@ footer {
 .icon-right {
     padding-right: 15px;
     color: white;
+}
+
+
+@media all and (max-width:1200px) {
+
+
+
+    .card {
+        width: 25%;
+        padding-left: 5px;
+    }
+
+    .section-side {
+        width: 30%;
+    }
+
+    .section-middle{
+        width:40%;
+    }
+
+    .player-icon {
+    padding: 5px 10px;
+    }
+
+    .play-button {
+        padding:5px 10px;
+    }
+}
+
+
+@media all and (max-width:600px) {
+
+
+
+    .card {
+        width: 50%;
+        padding-left: 5px;
+    }
+
+    .section-side {
+        width: 35%;
+    }
+
+    .section-middle{
+        width:30%;
+    }
+
+    .player-icon {
+    padding: 5px 10px;
+    }
+
+    .play-button {
+        padding:5px 10px;
+    }
 }
